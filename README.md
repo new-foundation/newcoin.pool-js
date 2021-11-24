@@ -21,6 +21,7 @@ Web library can be found in the [dist] folder
 const {RpcApi} = require("newcoinfarm");
 // ES6 import
 import {RpcApi} from "newcoinfarm"
+```
 
 ## Documentation
 
