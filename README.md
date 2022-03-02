@@ -1,4 +1,4 @@
-# newcoin.farm-js
+# newcoin.pool-js
 
 JS Library to read data from newcoin.farm.
 
@@ -9,7 +9,7 @@ This is a [Node.js](https://nodejs.org/en/) module available through the
 [`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
 ```sh
-$ npm install @newcoin-foundation/newcoin.farm-js
+$ npm install @newcoin-foundation/newcoin.pool-js
 ```
 
 ### Initialize
@@ -18,9 +18,9 @@ Web library can be found in the [dist] folder
 
 ```javascript
 // standard import
-const {RpcApi} = require("newcoinfarm");
+const {RpcApi} = require("newcoinpool");
 // ES6 import
-import {RpcApi} from "newcoinfarm"
+import {RpcApi} from "newcoinpool"
 ```
 
 ## Documentation

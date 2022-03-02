@@ -3,7 +3,7 @@ import {
   GetCurrencyBalance,
   GetTableRowsPayload,
 } from "../interfaces/chain.interface";
-import { DepositPayload } from "../interfaces/deposit.interface";
+import { UnstakePayload } from "../interfaces/unstake.interface";
 
 export default class RpcApi {
   readonly nodeos_url: string;
@@ -43,12 +43,12 @@ export default class RpcApi {
     });
   }
 
-  async getDeposit(opts: DepositPayload): Promise<any> {
+  async getUnstake(opts: UnstakePayload): Promise<any> {
     return this.getTableRows({
       json: true,
       code: this.contract,
       scope: opts.owner,
-      table: "deposits",
+      table: "unstakes",
       table_key: opts.id,
       lower_bound: opts.id,
       upper_bound: opts.id,

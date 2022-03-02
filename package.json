@@ -1,7 +1,7 @@
 {
-  "name": "@newcoin-foundation/newcoin.farm-js",
+  "name": "@newcoin-foundation/newcoin.pool-js",
   "version": "1.0.1",
-  "description": "js module to fetch data from the newcoin.farm smart contract",
+  "description": "js module to fetch data from the newcoin.pool smart contract",
   "main": "dist/index.js",
   "scripts": {
     "build:npm": "tsc",
@@ -16,17 +16,16 @@
   },
   "keywords": [
     "newcoin",
-    "newcoin.farm",
-    "yeild",
+    "newcoin.pool",
     "blockchain",
     "newlife"
   ],
   "author": "Avm07",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Newcoin-Foundation/newcoin.farm-js/issues"
+    "url": "https://github.com/Newcoin-Foundation/newcoin.pool-js/issues"
   },
-  "homepage": "https://github.com/Newcoin-Foundation/newcoin.farm-js#readme",
+  "homepage": "https://github.com/Newcoin-Foundation/newcoin.pool-js#readme",
   "devDependencies": {
     "@types/chai": "^4.2.22",
     "@types/mocha": "^9.0.0",
