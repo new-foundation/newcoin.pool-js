@@ -78,7 +78,7 @@ export class ActionGenerator {
       from: from,
       to: this.contract,
       quantity: quantity,
-      memo: "lock"
+      memo: "stake"
     });
   }
 
