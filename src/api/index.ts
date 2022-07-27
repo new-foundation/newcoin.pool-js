@@ -2,10 +2,10 @@ import {
   GetCurrencyStats,
   GetCurrencyBalance,
   GetTableRowsPayload,
-} from "../interfaces/chain.interface";
-import { UnstakePayload } from "../interfaces/unstake.interface";
+  UnstakePayload
+} from "../interfaces";
 
-export default class RpcApi {
+export class ChainApi {
   readonly nodeos_url: string;
   readonly contract: string;
   readonly fetch: any;

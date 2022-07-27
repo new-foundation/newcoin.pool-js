@@ -18,10 +18,10 @@ Web library can be found in the [dist] folder
 
 ```javascript
 // standard import
-const { ActionGenerator, RpcApi} = require("newcoinpool");
+const { ActionGenerator, ChainApi } = require("@newcoin-foundation/newcoin.pool-js");
 
 // ES6 import
-import {ActionGenerator, RpcApi} from "newcoinpool"
+import { ActionGenerator, ChainApi } from "@newcoin-foundation/newcoin.pool-js"
 ```
 
 ## Documentation
