@@ -1,6 +1,6 @@
 {
   "name": "@newfound8ion/newcoin.pool-js",
-  "version": "1.0.6",
+  "version": "1.0.9",
   "description": "js module to fetch data from the newcoin.pool smart contract",
   "main": "dist/index.js",
   "types": "",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/newfound8ion/newcoin.farm-js.git"
+    "url": "git+https://github.com/newfound8ion/newcoin.pool-js.git"
   },
   "publishConfig": {
     "access": "public"

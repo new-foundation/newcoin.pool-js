@@ -9,7 +9,7 @@ This is a [Node.js](https://nodejs.org/en/) module available through the
 [`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
 ```sh
-$ npm install @newcoin-foundation/newcoin.pool-js
+$ npm install @newfound8ion/newcoin.pool-js
 ```
 
 ### Initialize
@@ -18,10 +18,10 @@ Web library can be found in the [dist] folder
 
 ```javascript
 // standard import
-const { ActionGenerator, ChainApi } = require("@newcoin-foundation/newcoin.pool-js");
+const { ActionGenerator, ChainApi } = require("@newfound8ion/newcoin.pool-js");
 
 // ES6 import
-import { ActionGenerator, ChainApi } from "@newcoin-foundation/newcoin.pool-js"
+import { ActionGenerator, ChainApi } from "@newfound8ion/newcoin.pool-js"
 ```
 
 ## Documentation

@@ -3,6 +3,7 @@
 # open
 
 ### Parameters:
+
 * @param owner - owner of account balance    
 * @param symbol - token symbol
 * @param payer - payer of RAM       
@@ -14,6 +15,26 @@ Creates 0 balance account in balances table.
 ### Required Authorization:
 
 **payer** account.
+
+### Example:
+
+```typescript
+import { ActionGenerator } from "@newfound8ion/newcoin.pool-js";
+
+const actionGenerator = new ActionGenerator("pool.nco");
+
+const action = await actionsGen.open(
+  [
+    {
+      actor: "alice",
+      permission: "active",
+    },
+  ],
+  "alice",
+  "0,GNCO",
+  "alice"
+);
+```
 
 ***
 
@@ -32,6 +53,25 @@ Close 0 balance account in balances table.
 
 **owner** account.
 
+### Example:
+
+```typescript
+import { ActionGenerator } from "@newfound8ion/newcoin.pool-js";
+
+const actionGenerator = new ActionGenerator("pool.nco");
+
+const action = await actionsGen.close(
+  [
+    {
+      actor: "alice",
+      permission: "active",
+    },
+  ],
+  "alice",
+  "0,GNCO"
+);
+```
+
 ***
 
 # instunstake
@@ -48,6 +88,25 @@ Instant unstake tokens.
 ### Required Authorization:
 
 **from** account.
+
+### Example:
+
+```typescript
+import { ActionGenerator } from "@newfound8ion/newcoin.pool-js";
+
+const actionGenerator = new ActionGenerator("pool.nco");
+
+const action = await actionsGen.instunstake(
+  [
+    {
+      actor: "alice",
+      permission: "active",
+    },
+  ],
+  "alice",
+  "100.0000 GNCO"
+);
+```
 
 ***
 
@@ -66,6 +125,25 @@ Delayed unstake tokens.
 
 **from** account.
 
+### Example:
+
+```typescript
+import { ActionGenerator } from "@newfound8ion/newcoin.pool-js";
+
+const actionGenerator = new ActionGenerator("pool.nco");
+
+const action = await actionsGen.dldunstake(
+  [
+    {
+      actor: "alice",
+      permission: "active",
+    },
+  ],
+  "alice",
+  "100.0000 GNCO"
+);
+```
+
 ***
 
 # redeem
@@ -83,6 +161,25 @@ Redeem delayed unstake.
 
 **from** account.
 
+### Example:
+
+```typescript
+import { ActionGenerator } from "@newfound8ion/newcoin.pool-js";
+
+const actionGenerator = new ActionGenerator("pool.nco");
+
+const action = await actionsGen.redeem(
+  [
+    {
+      actor: "alice",
+      permission: "active",
+    },
+  ],
+  "alice",
+  "1"
+);
+```
+
 ***
 
 # stake
@@ -99,5 +196,24 @@ Stake to the pool.
 ### Required Authorization:
 
 **from** account.
+
+### Example:
+
+```typescript
+import { ActionGenerator } from "@newfound8ion/newcoin.pool-js";
+
+const actionGenerator = new ActionGenerator("pool.nco");
+
+const action = await actionsGen.stake(
+  [
+    {
+      actor: "alice",
+      permission: "active",
+    },
+  ],
+  "alice",
+  "100.0000 NCO"
+);
+```
 
 ***
